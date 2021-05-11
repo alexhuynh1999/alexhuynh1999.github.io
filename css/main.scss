@@ -6,8 +6,60 @@ body {
   font-family: 'Roboto', arial;
 }
 
+
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background: #272727;
+  a {
+    color: white;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+
+  .logo {
+    color:white;
+  }
+
+   ul {
+     display: flex;
+     a {
+       display: block;
+       padding: 0 1em;
+     }
+   }
+
+}
+
+.landing {
+  img {
+    position: relative;
+    filter: brightness(50%);
+  }
+}
+
+.title {
+  position: absolute;
+  top: 25%;
+  bottom: 70%;
+  left: 50%;
+  transform: translate(-50%);
+  color:white;
 }
