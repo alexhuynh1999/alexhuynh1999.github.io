@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  /* Japandi Color Palette - Updated */
+  --color-bg-primary: #FcfAf7;
+  /* Off-white / Cream */
+  --color-bg-secondary: #F0Efe9;
+  /* Warm Light Gray */
+  --color-text-primary: #2C2C2C;
+  /* Soft Charcoal */
+  --color-text-secondary: #595959;
+  /* Medium Gray */
+
+  --color-sage: #78A058;
+  /* More vibrant Leaf Green */
+  --color-olive: #5D7A46;
+  /* Deep Green Highlight */
+  --color-wood-light: #E3D5CA;
+  /* Birch-like width */
+  --color-wood-dark: #A69279;
+
+  /* Typography */
+  --font-display: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Animations */
+  --animate-fade-in: fade-in 0.5s ease-out;
+  --animate-slide-up: slide-up 0.5s ease-out;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom Utilities */
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility bg-wood-pattern {
+  background-color: var(--color-wood-light);
+  background-image: repeating-linear-gradient(45deg, rgba(166, 146, 121, 0.05) 0px, rgba(166, 146, 121, 0.05) 2px, transparent 2px, transparent 12px), repeating-linear-gradient(135deg, rgba(166, 146, 121, 0.05) 0px, rgba(166, 146, 121, 0.05) 2px, transparent 2px, transparent 12px);
+}
